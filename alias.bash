@@ -13,6 +13,9 @@ alias xargs="xargs "
 
 alias ack="ack -k"
 
+alias ne="perl -ne"
+alias pe="perl -pe"
+
 # completing alias, maybe
 compalias() {
   cmd=$(echo "$2" | awk '{print $1}')
