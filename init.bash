@@ -18,7 +18,7 @@ esac
 
 export MC_SKIN=modarcon16
 export MANWIDTH=80
-export LESS=-R
+export LESS=-Ri
 
 shopt -s autocd
 shopt -s checkwinsize
