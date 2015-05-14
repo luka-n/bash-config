@@ -2,6 +2,10 @@ if command -v colordiff > /dev/null; then
   alias diff=colordiff
 fi
 
+if [ -n "$TR_AUTH" ] ; then
+  alias transmission-remote="transmission-remote -ne"
+fi
+
 alias dirs="dirs -v"
 
 alias grep="grep --color=auto"
