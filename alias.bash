@@ -2,6 +2,12 @@ if command -v colordiff > /dev/null; then
   alias diff=colordiff
 fi
 
+if command -v colormake > /dev/null; then
+  alias make=colormake
+fi
+
+alias gcc="gcc -fdiagnostics-color=auto"
+
 if [ -n "$TR_AUTH" ] ; then
   alias transmission-remote="transmission-remote -ne"
 fi
