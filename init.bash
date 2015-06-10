@@ -4,6 +4,8 @@ case $- in
   *) return;;
 esac
 
+[ -z "$STY" ] && exec screen
+
 [ -f /etc/bash_completion ] && . /etc/bash_completion
 
 . ~/.bashrc.d/alias.bash
