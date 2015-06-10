@@ -4,6 +4,8 @@ case $- in
   *) return;;
 esac
 
+[ -f /etc/bash_completion ] && . /etc/bash_completion
+
 . ~/.bashrc.d/alias.bash
 . ~/.bashrc.d/autopushd.bash
 . ~/.bashrc.d/editor.bash
