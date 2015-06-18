@@ -6,7 +6,9 @@ esac
 
 [ -z "$STY" ] && exec screen
 
-[ -f /etc/bash_completion ] && . /etc/bash_completion
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+  . /usr/share/bash-completion/bash_completion
+fi
 
 . ~/.bashrc.d/alias.bash
 . ~/.bashrc.d/autopushd.bash
