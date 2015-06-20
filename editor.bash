@@ -1,5 +1,5 @@
 export EDITOR="emacsclient -c"
-export ALTERNATE_EDITOR=emacs
+export ALTERNATE_EDITOR=""
 
 sudoemacsclient() {
   args=($@)
