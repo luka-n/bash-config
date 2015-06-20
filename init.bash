@@ -24,8 +24,8 @@ fi
 . ~/.bashrc.d/prompt.bash
 . ~/.bashrc.d/title.bash
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 . ~/.bashrc.d/fortune.bash
 . ~/.bashrc.d/todo.bash
 . ~/.bashrc.d/lastbackup.bash
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
