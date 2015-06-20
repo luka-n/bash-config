@@ -19,6 +19,7 @@ fi
 
 . ~/.bashrc.d/fortune.bash
 . ~/.bashrc.d/todo.bash
+. ~/.bashrc.d/lastbackup.bash
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
