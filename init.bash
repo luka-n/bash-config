@@ -6,6 +6,13 @@ esac
 
 [ -z "$STY" ] && exec screen
 
+export MC_SKIN=modarcon16
+export MANWIDTH=80
+export LESS=-Ri
+
+shopt -s autocd
+shopt -s checkwinsize
+
 if [ -f /usr/share/bash-completion/bash_completion ]; then
   . /usr/share/bash-completion/bash_completion
 fi
@@ -22,10 +29,3 @@ fi
 . ~/.bashrc.d/lastbackup.bash
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-export MC_SKIN=modarcon16
-export MANWIDTH=80
-export LESS=-Ri
-
-shopt -s autocd
-shopt -s checkwinsize
