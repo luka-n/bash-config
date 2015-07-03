@@ -26,6 +26,12 @@ alias ack="ack -k"
 alias ne="perl -ne"
 alias pe="perl -pe"
 
+alias x="xargs"
+alias x0="xargs -0"
+alias x1="xargs -n1"
+
+alias files="nautilus"
+
 # completing alias, maybe
 compalias() {
   cmd=$(echo "$2" | awk '{print $1}')
