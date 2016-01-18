@@ -1,7 +1,9 @@
-alias pm-hibernate="sudo pm-hibernate"
-alias pm-powersave="sudo pm-powersave"
-alias pm-suspend="sudo pm-suspend"
-alias pm-suspend-hybrid="sudo pm-suspend-hybrid"
+if command -v pm-suspend > /dev/null; then
+  alias pm-hibernate="sudo pm-hibernate"
+  alias pm-powersave="sudo pm-powersave"
+  alias pm-suspend="sudo pm-suspend"
+  alias pm-suspend-hybrid="sudo pm-suspend-hybrid"
+fi
 
 if command -v grc > /dev/null; then
   alias dig="grc dig"
