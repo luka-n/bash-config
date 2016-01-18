@@ -14,7 +14,7 @@ make_prompt() {
   if [ $EUID -eq 0 ]; then
     PS1+="\[${fg[red]}\]\h "
   else
-    PS1+="\[${fg[green]}\]\u@\h "
+    PS1+="\[${fg[green]}\]\h "
   fi
   PS1+="\[${fg[blue]}\]\W "
   if [ $ret -eq 0 ]; then
