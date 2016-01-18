@@ -47,9 +47,17 @@ compalias p less
 compalias s "sudo "
 compalias x "xargs "
 
-compalias a aptitude
-compalias ac apt-cache
-compalias ag apt-get
+if command -v aptitude > /dev/null; then
+  compalias a aptitude
+fi
+
+if command -v apt-cache > /dev/null; then
+  compalias ac apt-cache
+fi
+
+if command -v apt-get > /dev/null; then
+  compalias ag apt-get
+fi
 
 compalias jc journalctl
 compalias sc systemctl
