@@ -1,3 +1,11 @@
+if command -v ncat > /dev/null; then
+  alias nc=ncat
+fi
+
+if command -v hub > /dev/null; then
+  alias git=hub
+fi
+
 if command -v colordiff > /dev/null; then
   alias diff=colordiff
 fi
