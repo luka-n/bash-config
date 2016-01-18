@@ -4,8 +4,6 @@ case $- in
   *) return;;
 esac
 
-[ -z "$STY" ] && exec screen
-
 export MC_SKIN=modarcon16
 export MANWIDTH=80
 export LESS=-Ri
