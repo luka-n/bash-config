@@ -6,7 +6,7 @@ if command -v pskill > /dev/null; then
   alias psk=pskill
 fi
 
-if command -v grub2-mkconfig > /dev/null; then
+if [ -f /usr/sbin/grub2-mkconfig ]; then
   alias mkgrub="grub2-mkconfig -o /boot/grub/grub.cfg"
 fi
 
