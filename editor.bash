@@ -1,6 +1,8 @@
 export EDITOR="emacsclient -c"
 export ALTERNATE_EDITOR=""
 
+export VISUAL="$EDITOR"
+
 sudoemacsclient() {
   args=($@)
   if [ "${args[-1]::1}" != "-" ]; then
