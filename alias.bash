@@ -1,3 +1,7 @@
+if command -v grub2-mkconfig > /dev/null; then
+  alias mkgrub="grub2-mkconfig -o /boot/grub/grub.cfg"
+fi
+
 if command -v emerge > /dev/null; then
   # -aUDNu --with-bdeps=y
   alias eupdate="emerge --ask --changed-use --deep --newuse --update --with-bdeps=y @world"
