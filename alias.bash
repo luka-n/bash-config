@@ -1,3 +1,11 @@
+if command -v psgrep > /dev/null; then
+  alias psg=psgrep
+fi
+
+if command -v pskill > /dev/null; then
+  alias psk=pskill
+fi
+
 if command -v grub2-mkconfig > /dev/null; then
   alias mkgrub="grub2-mkconfig -o /boot/grub/grub.cfg"
 fi
