@@ -1,3 +1,13 @@
+if command -v grc > /dev/null; then
+  alias dig="grc dig"
+  alias ifconfig="grc ifconfig"
+  alias mount="grc mount"
+  alias netstat="grc netstat"
+  alias ping="grc ping"
+  alias ps="grc ps"
+  alias traceroute="grc traceroute"
+fi
+
 if command -v ncat > /dev/null; then
   alias nc=ncat
 fi
