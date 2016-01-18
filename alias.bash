@@ -1,3 +1,14 @@
+if command -v emerge > /dev/null; then
+  # -aUDNu --with-bdeps=y
+  alias eupdate="emerge --ask --changed-use --deep --newuse --update --with-bdeps=y @world"
+  alias edepclean="emerge --ask --depclean"
+  alias esync="emerge --sync"
+fi
+
+if command -v eix-sync > /dev/null; then
+  alias esync="eix-sync"
+fi
+
 if command -v pm-suspend > /dev/null; then
   alias pm-hibernate="sudo pm-hibernate"
   alias pm-powersave="sudo pm-powersave"
