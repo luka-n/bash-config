@@ -14,7 +14,7 @@ fi
 
 alias dirs="dirs -v"
 
-alias grep="grep --color=auto"
+alias grep="grep --color=auto -P"
 alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
 
