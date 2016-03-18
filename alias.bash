@@ -6,6 +6,8 @@ alias pkill="pkill -f"
 alias pg="pgrep"
 alias pk="pkill"
 
+alias deborphan="deborphan -a -p4 --ignore-suggests"
+
 if command -v apt-cache > /dev/null; then
   alias acs="apt-cache search"
 fi
