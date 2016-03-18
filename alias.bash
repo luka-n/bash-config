@@ -6,6 +6,17 @@ alias pkill="pkill -f"
 alias pg="pgrep"
 alias pk="pkill"
 
+if command -v apt-cache > /dev/null; then
+  alias acs="apt-cache search"
+fi
+
+if command -v apt-get > /dev/null; then
+  alias agi="apt-get install"
+
+  alias sag="sudo apt-get"
+  alias sagi="sudo apt-get install"
+fi
+
 if [ -f /usr/sbin/grub2-mkconfig ]; then
   alias mkgrub="grub2-mkconfig -o /boot/grub/grub.cfg"
 fi
