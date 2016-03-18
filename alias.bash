@@ -1,5 +1,3 @@
-
-
 alias pgrep="pgrep -af"
 alias pkill="pkill -f"
 
