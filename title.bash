@@ -9,7 +9,7 @@ show_command_in_title_bar() {
 case "$TERM" in
   xterm*|rxvt*|screen*)
     # must come last, because BASH_COMMAND
-    PROMPT_COMMAND="${PROMPT_COMMAND}show_directory_in_title_bar;"
+    PROMPT_COMMAND="${PROMPT_COMMAND};show_directory_in_title_bar;"
     trap show_command_in_title_bar DEBUG
     ;;
   *)
