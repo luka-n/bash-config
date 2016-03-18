@@ -1,10 +1,10 @@
-if command -v psgrep > /dev/null; then
-  alias psg=psgrep
-fi
 
-if command -v pskill > /dev/null; then
-  alias psk=pskill
-fi
+
+alias pgrep="pgrep -af"
+alias pkill="pkill -f"
+
+alias pg="pgrep"
+alias pk="pkill"
 
 if [ -f /usr/sbin/grub2-mkconfig ]; then
   alias mkgrub="grub2-mkconfig -o /boot/grub/grub.cfg"
