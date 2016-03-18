@@ -21,6 +21,10 @@ if command -v emerge > /dev/null; then
   alias esync="emerge --sync"
 fi
 
+if command -v eix > /dev/null; then
+  alias eix="eix -sS"
+fi
+
 if command -v eix-sync > /dev/null; then
   alias esync="eix-sync"
 fi
