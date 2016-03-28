@@ -20,7 +20,6 @@ fi
 . ~/.bashrc.d/editor.bash
 . ~/.bashrc.d/history.bash
 . ~/.bashrc.d/prompt.bash
-. ~/.bashrc.d/title.bash
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
