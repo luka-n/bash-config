@@ -22,4 +22,4 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-. ~/.bashrc.d/fortune.bash
+command -v fortune > /dev/null && fortune -as
