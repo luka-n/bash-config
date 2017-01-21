@@ -25,4 +25,8 @@ fi
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f ~/.enhancd/init.sh ] && . ~/.enhancd/init.sh
 
+if command -v direnv > /dev/null; then
+  eval "$(direnv hook bash)"
+fi
+
 command -v fortune > /dev/null && fortune -as
