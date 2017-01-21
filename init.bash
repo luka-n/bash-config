@@ -21,5 +21,6 @@ fi
 . ~/.bashrc.d/prompt.bash
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.enhancd/init.sh ] && . ~/.enhancd/init.sh
 
 command -v fortune > /dev/null && fortune -as
