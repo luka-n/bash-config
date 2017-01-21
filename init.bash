@@ -16,7 +16,6 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 fi
 
 . ~/.bashrc.d/alias.bash
-. ~/.bashrc.d/autopushd.bash
 . ~/.bashrc.d/editor.bash
 . ~/.bashrc.d/history.bash
 . ~/.bashrc.d/prompt.bash
@@ -24,5 +23,3 @@ fi
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 . ~/.bashrc.d/fortune.bash
-. ~/.bashrc.d/todo.bash
-. ~/.bashrc.d/lastbackup.bash
