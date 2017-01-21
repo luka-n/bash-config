@@ -20,6 +20,8 @@ fi
 . ~/.bashrc.d/history.bash
 . ~/.bashrc.d/prompt.bash
 
+[ -f ~/.asdf/asdf.sh ] && . ~/.asdf/asdf.sh
+[ -f ~/.asdf/completions/asdf.bash ] && . ~/.asdf/completions/asdf.bash
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f ~/.enhancd/init.sh ] && . ~/.enhancd/init.sh
 
